@@ -1,0 +1,30 @@
+{
+  "name": "sandwich-alignment",
+  "version": "1.0.0",
+  "description": "Make alignment charts with two custom axes, like the original sandwich alignment chart",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prebuild": "del-cli dist -f",
+    "dev": "webpack --mode=development --watch",
+    "build": "npm run prebuild -s && webpack --mode=production"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.0.0",
+    "@babel/preset-env": "^7.12.11",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^5.0.1",
+    "del-cli": "^3.0.1",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^4.5.1",
+    "style-loader": "^2.0.0",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.19.0",
+    "webpack-cli": "^4.4.0"
+  },
+  "dependencies": {
+    "@timohausmann/quadtree-js": "^1.2.4"
+  }
+}
